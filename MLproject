@@ -1,0 +1,9 @@
+name: tutorial
+
+python_env: python_env.yaml
+
+entry_points:
+  main:
+    parameters:
+      max_iter: {type: int, default: 100}
+    command: "python train.py {max_iter}"
